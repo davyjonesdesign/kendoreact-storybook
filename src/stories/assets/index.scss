@@ -1,8 +1,7 @@
 // Compatible with @progress/kendo-theme-default v.5.8.0
 
 // @import 'tokens';
-
-@import '~@progress/kendo-theme-default/dist/all';
+@use 'w-kendo-theme/dist/scss' as *;
 
 body {
   font-family: sans-serif;

@@ -1,0 +1,12 @@
+@use '../tokens' as *;
+  @use '../placeholders' as *;
+
+  @use '../kendo' as *;
+
+    .w-hr.w-hr-heavy{
+    border-bottom-color: $tb-figma-neutral-light;
+            border-left-color: $tb-figma-neutral-light;
+            border-right-color: $tb-figma-neutral-light;
+            border-top-color: $tb-figma-neutral-light;
+        
+}

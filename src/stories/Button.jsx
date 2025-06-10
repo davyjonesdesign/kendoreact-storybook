@@ -3,29 +3,41 @@ import PropTypes from 'prop-types';
 import { Button as KendoButton } from "@progress/kendo-react-buttons";
 import './assets/index.scss';
 
-export const Button = ({...props }) => {
+export const Button = ({ label, ...props }) => {
+  const hasLabel = typeof label === 'string' && label.trim() !== '';
+
   return (
-    <>
-      <KendoButton {...props}> {props.label} </KendoButton>
-    </>
+    hasLabel ? (
+      <KendoButton
+        themeColor="primary"
+        rounded="full"
+        {...props}
+      >
+        {label}
+      </KendoButton>
+    ) : (
+      <KendoButton
+        themeColor="primary"
+        rounded="full"
+        {...props}
+      />
+    )
   );
 };
 
 Button.propTypes = {
   label: PropTypes.string,
   disabled: PropTypes.bool,
-  fillMode: PropTypes.oneOf(['solid', 'outline', 'flat', 'link', 'null']),
+  fillMode: PropTypes.oneOf(['solid', 'outline', 'link']),
   icon: PropTypes.string,
   iconClass: PropTypes.string,
   imageAlt: PropTypes.string,
   iconUrl: PropTypes.string,
-  rounded: PropTypes.oneOf(['small', 'medium', 'large', 'full', 'null']),
   selected: PropTypes.bool,
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'null']),
-  themeColor: PropTypes.oneOf(['base', 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse', 'null']),
+  size: PropTypes.oneOf(['medium', 'large']),
   togglable: PropTypes.bool
 };
 
 Button.defaultProps = {
-  label: 'Button'
+  label: undefined
 };
