@@ -3,7 +3,7 @@ import React from 'react';
 import { ButtonGroup } from './ButtonGroup';
 
 export default {
-  title: 'Buttons/ButtonGroup',
+  title: '1 Micro Components/Buttons/ButtonGroup',
   component: ButtonGroup,
   argTypes: {
   },

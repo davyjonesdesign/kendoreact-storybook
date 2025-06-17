@@ -14,6 +14,7 @@
 @use '@progress/kendo-theme-default/scss/index.scss' as * with (
 
   $kendo-calendar-cell-size: $tb-kendo-calendar-cell-size,
+  $kendo-calendar-view-width: $tb-kendo-calendar-view-width,
   $kendo-checkbox-border-width: $tb-kendo-checkbox-border-width,
   $kendo-menu-popup-item-padding-x: $tb-kendo-menu-popup-item-padding-x,
   $kendo-menu-popup-sm-item-icon-margin-start: $tb-kendo-menu-popup-sm-item-icon-margin-start,

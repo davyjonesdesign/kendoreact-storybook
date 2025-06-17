@@ -78,7 +78,7 @@ export const ListBox = ({...props }) => {
   return (
     <div className='container'>
       <div className='row justify-content-center'>
-        <div className='col'>
+        <div className="col k-pr-2">
           <h6>Employees</h6>
           <KendoListBox style={{
           height: 350,
@@ -87,7 +87,7 @@ export const ListBox = ({...props }) => {
           return <ListBoxToolbar tools={['moveUp', 'moveDown', 'transferTo', 'transferFrom', 'transferAllTo', 'transferAllFrom', 'remove']} data={state.employees} dataConnected={state.developers} onToolClick={handleToolBarClick} />;
         }} />
         </div>
-        <div className='col'>
+        <div  className="col k-pr-0">
           <h6>Developers</h6>
           <KendoListBox style={{
           height: 350,

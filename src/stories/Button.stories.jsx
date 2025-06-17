@@ -1,32 +1,67 @@
 import React from 'react';
-
 import { Button } from './Button';
 
-export default {
-  title: 'Buttons/Button',
+const meta = {
+  title: '1 Micro Components/Buttons/Button',
   component: Button,
+  tags: ['autodocs'], // Enables auto-generated Docs tab
+  parameters: {
+    docs: {
+      description: {
+        component: 'A customizable button component for primary user interactions.',
+      },
+    },
+  },
   argTypes: {
-
+    label: { control: 'text' },
+    fillMode: {
+      control: { type: 'select' },
+      options: ['solid', 'outline', 'link'],
+    },
+    icon: { control: 'text' },
+    disabled: { control: 'boolean' },
+    togglable: { control: 'boolean' },
+    toggled: { control: 'boolean' },
+    size: {
+      control: { type: 'select' },
+      options: ['medium', 'large'],
+    },
   },
 };
 
-const Template = (args) => <Button {...args} />;
+export default meta;
 
-export const Primary = Template.bind({});
-Primary.args = {
+// Shared render function
+const IconButton = (args) => (
+  <Button {...args} icon="letter-space" />
+);
+
+export const Solid = {
+  args: {
+    label: 'Solid',
+    fillMode: 'solid',
+    size: 'medium',
+    disabled: false,
+  },
+  render: (args) => <IconButton {...args} />,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
+export const Outline = {
+  args: {
+    label: 'Outline',
+    fillMode: 'outline',
+    size: 'medium',
+    disabled: false,
+  },
+  render: (args) => <IconButton {...args} />,
 };
 
-export const Icon = Template.bind({});
-Icon.args = {
-  icon: 'check',
-};
-
-export const Togglable = Template.bind({});
-Togglable.args = {
-  togglable: true,
+export const Link = {
+  args: {
+    label: 'Link',
+    fillMode: 'link',
+    size: 'medium',
+    disabled: false,
+  },
+  render: (args) => <IconButton {...args} />,
 };

@@ -1,18 +1,21 @@
 import React from 'react';
-
 import { MultiSelectTree } from './MultiSelectTree';
 
-export default {
+const meta = {
   title: 'Dropdowns/MultiSelect Tree',
   component: MultiSelectTree,
+  tags: ['autodocs'], // Optional: enables Docs tab
   argTypes: {
-
+    // Add any prop controls here if needed
   },
 };
 
-const Template = (args) => <MultiSelectTree {...args} />;
+export default meta;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Primary = {
+  storyName: 'MultiSelect Tree',
+  args: {
+    // Provide default props here if needed
+  },
+  render: (args) => <MultiSelectTree {...args} />,
 };
-Primary.storyName = 'MultiSelect Tree';

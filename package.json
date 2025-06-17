@@ -56,6 +56,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "addon-screen-reader": "^1.8.6",
+    "bootstrap": "^5.3.6",
     "gh": "^2.8.9",
     "kendoreact-storybook": "file:./w-kendo-theme",
     "react": "^18.2.0",

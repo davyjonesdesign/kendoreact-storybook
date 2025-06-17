@@ -25,10 +25,15 @@ const fields = {
   subItemsField,
 };
 
+const delay = 500;
+
 export const MultiSelectTree = ({...props }) => {
 
   const [value, setValue] = React.useState([]);
   const [expanded, setExpanded] = React.useState([data[0][dataItemKey]]);
+  const [filter, setFilter] = React.useState();
+  const [loading, setLoading] = React.useState(false);
+  const loadingTimeout = React.useRef(false);
   const onChange = (event) =>
     setValue(
       getMultiSelectTreeValue(data, {
@@ -46,10 +51,19 @@ export const MultiSelectTree = ({...props }) => {
       processMultiSelectTreeData(data, {
         expanded,
         value,
+        filter,
         ...fields,
       }),
-    [expanded, value]
+    [expanded, value, filter]
   );
+  const onFilterChange = event => {
+    clearTimeout(loadingTimeout.current);
+    loadingTimeout.current = setTimeout(() => {
+      setFilter(event.filter);
+      setLoading(false);
+    }, delay);
+    setLoading(true);
+  };
 
   return (
     <>
@@ -67,6 +81,9 @@ export const MultiSelectTree = ({...props }) => {
         checkIndeterminateField={checkIndeterminateField}
         subItemsField={subItemsField}
         expandField={expandField}
+        filterable={true}
+        onFilterChange={onFilterChange}
+        loading={loading}
         onExpandChange={onExpandChange}
         label={"Category"}/>
 

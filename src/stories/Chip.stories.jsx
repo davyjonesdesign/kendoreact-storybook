@@ -1,27 +1,40 @@
 import React from 'react';
-
 import { Chip } from './Chip';
 
 export default {
-  title: 'Buttons/Chip',
+  title: '1 Micro Components/Buttons/Chip',
   component: Chip,
   argTypes: {
-
+    text: { control: 'text' },
+    fillMode: {
+      control: { type: 'radio' },
+      options: ['solid', 'outline'],
+    },
+    disabled: { control: 'boolean' },
+    removable: { control: 'boolean' },
   },
 };
 
-const Template = (args) => <Chip {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
+// Solid Chip story
+export const Solid = {
+  render: (args) => <Chip {...args} />,
+  args: {
+    label: 'Solid Chip',
+    fillMode: 'solid',
+    disabled: false,
+    removeIcon: "x",
+    removable: true
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
-};
-
-export const Removable = Template.bind({});
-Removable.args = {
-  removable: true,
+// Outline Chip story
+export const Outline = {
+  render: (args) => <Chip {...args} />,
+  args: {
+    label: 'Outline Chip',
+    fillMode: 'outline',
+    disabled: false,
+    removeIcon: "x",
+    removable: true
+  },
 };
