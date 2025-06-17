@@ -1,4 +1,4 @@
-// Compatible with @progress/kendo-theme-default v.10.2.0
+// Compatible with @progress/kendo-theme-default v.11.0.2
 
 
   @use 'tokens' as *;
@@ -14,7 +14,6 @@
 @use '@progress/kendo-theme-default/scss/index.scss' as * with (
 
   $kendo-calendar-cell-size: $tb-kendo-calendar-cell-size,
-  $kendo-calendar-view-width: $tb-kendo-calendar-view-width,
   $kendo-checkbox-border-width: $tb-kendo-checkbox-border-width,
   $kendo-menu-popup-item-padding-x: $tb-kendo-menu-popup-item-padding-x,
   $kendo-menu-popup-sm-item-icon-margin-start: $tb-kendo-menu-popup-sm-item-icon-margin-start,
@@ -259,11 +258,11 @@
     on-primary: $tb-kendo-color-on-primary,
     error: $tb-kendo-color-error,
     base-subtle: $tb-kendo-color-base-subtle,
+    app-surface: $tb-kendo-color-app-surface,
     primary-subtle: $tb-kendo-color-primary-subtle,
     border-alt: $tb-kendo-color-border-alt,
     base: $tb-kendo-color-base,
     primary-active: $tb-kendo-color-primary-active,
-    app-surface: $tb-kendo-color-app-surface,
     base-emphasis: $tb-kendo-color-base-emphasis,
     success: $tb-kendo-color-success,
     on-base: $tb-kendo-color-on-base,

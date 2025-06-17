@@ -6,17 +6,22 @@
     .k-card.k-card-vertical.w-block-link-vertical{
     cursor: pointer;
             max-width: 390px;
-            height: 140px;
+            height: 120px;
             align-items: stretch;
             justify-content: start;
             row-gap: 10px;
-            min-width: 140px;
+            min-width: 120px;
+            align-self: stretch;
+            padding-bottom: 10px;
+            min-height: 120px;
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .k-card-subtitle{
     overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            font-size: 12px;
+            display: none;
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper{
@@ -31,11 +36,10 @@
             padding-right: 0px;
             align-items: center;
             min-height: 70px;
-            height: 80px;
-            max-height: 80px;
+            height: 100%;
             background-color: $tb-figma-primary-light-3;
             border-bottom-color: $tb-figma-neutral-light-2;
-            border-bottom-style: none;
+            border-bottom-style: solid;
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .k-card-title{

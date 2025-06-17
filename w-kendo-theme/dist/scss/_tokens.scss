@@ -1,4 +1,4 @@
-// Compatible with @progress/kendo-theme-default v.10.2.0
+// Compatible with @progress/kendo-theme-default v.11.0.2
 
 $tb-kendo-spacing-2: 0.5rem;
 $tb-kendo-spacing-1: 0.25rem;
@@ -7,7 +7,6 @@ $tb-figma-spacing-20: 20px;
 $tb-figma-spacing-5: 5px;
 $tb-kendo-calendar-cell-size: 40px;
 $tb-figma-border-radius-full: 100px;
-$tb-kendo-calendar-view-width: 256px;
 $tb-kendo-card-header-border-width: 1px;
 $tb-kendo-checkbox-border-width: 2px;
 $tb-figma-height-20: 20px;
@@ -43,6 +42,7 @@ $tb-kendo-toolbar-flat-border-width: 1px;
 $tb-figma-border-radius-5: 5px;
 $tb-figma-spacing-35: 35px;
 $tb-figma-spacing-50: 50px;
+$tb-kendo-calendar-view-width: 256px;
 $tb-kendo-button-padding-x: $tb-figma-spacing-20;
 $tb-kendo-button-padding-y: $tb-figma-spacing-5;
 $tb-kendo-calendar-footer-padding-x: $tb-figma-spacing-5;
@@ -225,6 +225,7 @@ $tb-kendo-chip-outline-selected-text: $tb-figma-neutral-dark-2;
 $tb-kendo-component-header-bg: $tb-kendo-color-surface;
 $tb-kendo-dialog-titlebar-bg: $tb-kendo-component-header-bg;
 $tb-kendo-dialog-titlebar-text: $tb-figma-neutral-dark-2;
+$tb-kendo-color-app-surface: $tb-figma-background-alt;
 $tb-kendo-dock-manager-pane-header-bg: $tb-kendo-component-header-bg;
 $tb-kendo-component-bg: $tb-kendo-color-surface-alt;
 $tb-kendo-drawer-bg: $tb-kendo-component-bg;
@@ -291,7 +292,6 @@ $tb-kendo-prompt-content-text: $tb-kendo-component-header-text;
 $tb-kendo-prompt-content-bg: $tb-kendo-component-header-bg;
 $tb-kendo-prompt-content-border: $tb-kendo-component-header-border;
 $tb-kendo-prompt-suggestion-text: $tb-kendo-component-text;
-$tb-kendo-color-app-surface: $tb-figma-background-alt;
 $tb-kendo-prompt-suggestion-border: $tb-kendo-component-border;
 $tb-kendo-radio-border: $tb-figma-primary;
 $tb-kendo-rating-icon-text: $tb-kendo-component-text;

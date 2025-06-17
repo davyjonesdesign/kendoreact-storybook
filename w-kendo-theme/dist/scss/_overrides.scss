@@ -1,4 +1,4 @@
-// Compatible with @progress/kendo-theme-default v.10.2.0
+// Compatible with @progress/kendo-theme-default v.11.0.2
 
 @use 'tokens' as *;
   @use 'placeholders' as *;
@@ -241,8 +241,8 @@
         
 }
     .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid .k-input-suffix.k-input-suffix-horizontal .k-button.k-button-flat.k-button-flat-primary .k-button-text{
-    color: $tb-figma-primary;
-            font-size: 30px;
+                    @extend %tb-typography-fig-p-medium;
+          color: $tb-figma-primary;
         
 }
     .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid .k-input-suffix.k-input-suffix-horizontal .k-button.k-button-flat.k-button-flat-primary::before{
@@ -900,7 +900,7 @@
             border-top-right-radius: $tb-figma-border-radius-10;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link{
                     @extend %tb-typography-archived-h6;
           padding-top: $tb-figma-spacing-10;
             padding-bottom: $tb-figma-spacing-10;
@@ -909,7 +909,7 @@
             height: 40px;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-hover,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hover,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hovered,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link:hover{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-hover,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hover,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hovered,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link:hover{
     background-color: $tb-figma-primary-light-2;
             background-image: none;
             outline-style: solid;
@@ -919,7 +919,7 @@
             outline-offset: -1px;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-active,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-active,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link:active{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-active,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-active,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link:active{
     background-color: $tb-figma-primary-light-2;
             background-image: none;
             outline-style: solid;
@@ -928,17 +928,17 @@
             outline-offset: -1px;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-disabled,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-disabled,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:disabled{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-disabled,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-disabled,.k-menu-popup .k-menu-group .k-item.k-menu-item:disabled{
     opacity: 100%;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-disabled .k-link.k-menu-link,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-disabled .k-link.k-menu-link,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:disabled .k-link.k-menu-link{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-disabled .k-link.k-menu-link,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-disabled .k-link.k-menu-link,.k-menu-popup .k-menu-group .k-item.k-menu-item:disabled .k-link.k-menu-link{
     color: $tb-figma-neutral-light;
             background-color: $tb-figma-status-info-2;
             background-image: none;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-focus .k-link.k-menu-link,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focus .k-link.k-menu-link,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focused .k-link.k-menu-link,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:focus .k-link.k-menu-link{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-focus .k-link.k-menu-link,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focus .k-link.k-menu-link,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focused .k-link.k-menu-link,.k-menu-popup .k-menu-group .k-item.k-menu-item:focus .k-link.k-menu-link{
     box-shadow: none;
             outline-offset: -1px;
             outline-style: none;
@@ -1067,7 +1067,7 @@
             border-bottom-left-radius: $tb-figma-border-radius-5;
         
 }
-    .k-popup.k-menu-popup .k-group.k-menu-group{
+    .k-popup.k-menu-popup .k-menu-group{
     color: $tb-figma-neutral-dark-2;
             background-color: $tb-figma-background;
             background-image: none;
@@ -1488,24 +1488,24 @@
             background-image: none;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-svg-icon.k-svg-i-sort-asc-small{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-svg-icon.k-svg-i-sort-asc-small{
     width: $tb-figma-height-20;
             height: $tb-figma-height-20;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-svg-icon{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-svg-icon{
     width: $tb-figma-height-20;
             height: $tb-figma-height-20;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper{
     overflow: visible;
             border-bottom-style: solid;
             border-bottom-width: 1px;
             border-bottom-color: $tb-figma-neutral-light-2;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup{
+    .k-grid-columnmenu-popup.k-popup{
                     @extend %tb-effects-figma-effects-drop-shadows-card-small-down;
           flex-direction: column;
             border-top-left-radius: $tb-figma-border-radius-10;
@@ -1527,7 +1527,7 @@
             border-top-width: 1px;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item-content{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item-content{
     padding-bottom: 20px;
             padding-left: 20px;
             padding-right: 20px;
@@ -1546,9 +1546,8 @@
             overflow-x: visible;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched{
-                    @extend %tb-effects-tb-internal-none-effects;
-          flex-direction: row;
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched{
+    flex-direction: row;
             margin-bottom: 0px;
             margin-left: 0px;
             margin-right: 0px;
@@ -1565,11 +1564,15 @@
             overflow-x: visible;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched .k-button.k-button-md.k-button-solid.k-button-solid-primary.k-rounded-md .k-button-text{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched{
+                    @extend %tb-effects-tb-internal-none-effects;
+      
+}
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched .k-button.k-button-md.k-button-solid.k-button-solid-primary.k-rounded-md .k-button-text{
                     @extend %tb-typography-archived-h5-600;
       
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched .k-button.k-button-md.k-button-solid.k-button-solid-base.k-rounded-md .k-button-text{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item-content .k-filter-menu .k-filter-menu-container .k-actions.k-actions-stretched .k-button.k-button-md.k-button-solid.k-button-solid-base.k-rounded-md .k-button-text{
                     @extend %tb-typography-archived-h5-600;
       
 }
@@ -3235,7 +3238,7 @@
             height: 25px;
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-hover.k-button,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hover.k-button,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hovered.k-button,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button:hover.k-button{
+    .k-dropdownlist.k-hover .k-input-button.k-hover.k-button,.k-dropdownlist.k-hover .k-input-button.k-state-hover.k-button,.k-dropdownlist.k-hover .k-input-button.k-state-hovered.k-button,.k-dropdownlist.k-hover .k-input-button:hover.k-button,.k-dropdownlist.k-state-hover .k-input-button.k-hover.k-button,.k-dropdownlist.k-state-hover .k-input-button.k-state-hover.k-button,.k-dropdownlist.k-state-hover .k-input-button.k-state-hovered.k-button,.k-dropdownlist.k-state-hover .k-input-button:hover.k-button,.k-dropdownlist.k-state-hovered .k-input-button.k-hover.k-button,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hover.k-button,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hovered.k-button,.k-dropdownlist.k-state-hovered .k-input-button:hover.k-button,.k-dropdownlist:hover .k-input-button.k-hover.k-button,.k-dropdownlist:hover .k-input-button.k-state-hover.k-button,.k-dropdownlist:hover .k-input-button.k-state-hovered.k-button,.k-dropdownlist:hover .k-input-button:hover.k-button{
     display: inline-flex;
             justify-content: center;
             outline-color: $tb-figma-primary-dark;
@@ -3243,7 +3246,7 @@
             border-left-style: solid;
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-hover,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hover,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hovered,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button:hover{
+    .k-dropdownlist.k-hover .k-input-button.k-hover,.k-dropdownlist.k-hover .k-input-button.k-state-hover,.k-dropdownlist.k-hover .k-input-button.k-state-hovered,.k-dropdownlist.k-hover .k-input-button:hover,.k-dropdownlist.k-state-hover .k-input-button.k-hover,.k-dropdownlist.k-state-hover .k-input-button.k-state-hover,.k-dropdownlist.k-state-hover .k-input-button.k-state-hovered,.k-dropdownlist.k-state-hover .k-input-button:hover,.k-dropdownlist.k-state-hovered .k-input-button.k-hover,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hover,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hovered,.k-dropdownlist.k-state-hovered .k-input-button:hover,.k-dropdownlist:hover .k-input-button.k-hover,.k-dropdownlist:hover .k-input-button.k-state-hover,.k-dropdownlist:hover .k-input-button.k-state-hovered,.k-dropdownlist:hover .k-input-button:hover{
                     @extend %tb-effects-tb-internal-none-effects;
           flex-direction: row;
             padding-right: $tb-figma-spacing-10;
@@ -3257,36 +3260,6 @@
             border-bottom-color: $tb-figma-primary;
             border-right-color: $tb-figma-primary;
             border-top-color: $tb-figma-primary;
-        
-}
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button{
-    width: 50px;
-            height: 100%;
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-            outline-color: $tb-figma-neutral-light;
-            outline-style: none;
-            color: $tb-figma-neutral-dark-2;
-            background-color: rgba(0, 0, 0, 0);
-            background-image: none;
-            border-bottom-width: 1px;
-            border-left-width: 1px;
-            border-right-width: 1px;
-            border-top-width: 1px;
-            border-left-color: rgba(0, 0, 0, 0);
-            align-self: center;
-            padding-left: $tb-figma-spacing-10;
-            padding-right: $tb-figma-spacing-10;
-            border-bottom-style: none;
-            border-right-style: none;
-            border-top-style: none;
-            border-bottom-color: rgba(0, 0, 0, 0);
-            border-right-color: rgba(0, 0, 0, 0);
-            border-top-color: rgba(0, 0, 0, 0);
-        
-}
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-button{
-    border-left-style: none !important;
         
 }
     .k-dropdownlist{
@@ -3946,7 +3919,9 @@
         
 }
     .k-dropdownlist .k-input-button .k-button-icon.k-icon.k-svg-icon >svg{
-    color: $tb-figma-primary;
+    color: $tb-figma-neutral-dark-2;
+            width: unset;
+            height: unset;
         
 }
     .k-dropdownlist.k-hover.k-picker-solid,.k-dropdownlist.k-state-hover.k-picker-solid,.k-dropdownlist.k-state-hovered.k-picker-solid,.k-dropdownlist:hover.k-picker-solid{
@@ -4000,7 +3975,7 @@
     color: $tb-figma-neutral-light;
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button:hover .k-button-icon.k-icon.k-svg-icon >svg{
+    .k-dropdownlist.k-hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hovered .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist.k-state-hovered .k-input-button:hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist:hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist:hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist:hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon >svg,.k-dropdownlist:hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon >svg{
     color: $tb-figma-primary-dark;
         
 }
@@ -4048,7 +4023,7 @@
     left: -50%;
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button:hover .k-button-icon.k-icon.k-svg-icon{
+    .k-dropdownlist.k-hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hovered .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hovered .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist.k-state-hovered .k-input-button:hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist:hover .k-input-button.k-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist:hover .k-input-button.k-state-hover .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist:hover .k-input-button.k-state-hovered .k-button-icon.k-icon.k-svg-icon,.k-dropdownlist:hover .k-input-button:hover .k-button-icon.k-icon.k-svg-icon{
     background-color: initial;
             background-image: none;
         
@@ -4247,12 +4222,6 @@
 }
     .k-form.k-form-horizontal{
     display: flex;
-        
-}
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button .k-button-icon.k-icon.k-svg-icon >svg{
-    color: $tb-figma-neutral-dark-2;
-            width: unset;
-            height: unset;
         
 }
     .k-dropdownlist .k-input-inner{
@@ -4675,7 +4644,7 @@
             border-top-right-radius: $tb-figma-border-radius-20;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-focus,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focus,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focused,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:focus{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-focus,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focus,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focused,.k-menu-popup .k-menu-group .k-item.k-menu-item:focus{
     outline-style: none;
             background-color: k-color( base-active );
             background-image: none;
@@ -4698,7 +4667,7 @@
             color: $tb-figma-background;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item{
     border-bottom-width: 1px;
             border-left-width: 1px;
             border-right-width: 1px;
@@ -5786,7 +5755,7 @@
             border-top-width: 2px;
         
 }
-    .k-slider.k-focus .k-draghandle.k-draghandle-end,.k-slider.k-state-focus .k-draghandle.k-draghandle-end,.k-slider.k-state-focused .k-draghandle.k-draghandle-end,.k-slider:focus .k-draghandle.k-draghandle-end{
+    .k-slider .k-draghandle.k-draghandle-end.k-focus,.k-slider .k-draghandle.k-draghandle-end.k-state-focus,.k-slider .k-draghandle.k-draghandle-end.k-state-focused,.k-slider .k-draghandle.k-draghandle-end:focus{
     box-shadow: none;
             border-bottom-color: $tb-figma-neutral-dark-2;
             border-left-color: $tb-figma-neutral-dark-2;
@@ -5830,29 +5799,34 @@
     background-image: none;
         
 }
-    .k-dropdownlist .k-input-button.k-button{
-    outline-color: $tb-figma-neutral-dark-2;
-            outline-style: solid;
-            outline-width: 1px;
-            border-bottom-style: solid;
-            border-right-style: solid;
-            border-top-style: solid;
-        
-}
     .k-dropdownlist .k-input-button{
-    outline-offset: 0px;
-            border-bottom-color: rgba(0,0,0,0);
-            border-right-color: rgba(0,0,0,0);
-            border-top-color: rgba(0,0,0,0);
-        
-}
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button{
-    border-left-color: $tb-figma-neutral-light;
+    width: 50px;
+            height: 100%;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: $tb-figma-neutral-dark-2;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: none;
+            border-bottom-width: 1px;
             border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
+            border-left-color: rgba(0, 0, 0, 0);
+            align-self: center;
+            padding-left: $tb-figma-spacing-10;
+            padding-right: $tb-figma-spacing-10;
+            border-bottom-color: rgba(0, 0, 0, 0);
+            border-right-color: rgba(0, 0, 0, 0);
+            border-top-color: rgba(0, 0, 0, 0);
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button.k-button{
-    border-left-style: solid;
+    .k-dropdownlist .k-input-button.k-button{
+    outline-color: $tb-figma-neutral-light;
+            outline-style: none;
+            border-left-style: none !important;
+            border-bottom-style: none;
+            border-right-style: none;
+            border-top-style: none;
         
 }
     .k-dropdownlist.k-hover .k-input-button.k-button,.k-dropdownlist.k-state-hover .k-input-button.k-button,.k-dropdownlist.k-state-hovered .k-input-button.k-button,.k-dropdownlist:hover .k-input-button.k-button{
@@ -6548,7 +6522,7 @@
             border-top-color: $tb-figma-primary-light;
         
 }
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button .k-button-icon.k-icon.k-svg-icon{
+    .k-dropdownlist .k-input-button .k-button-icon.k-icon.k-svg-icon{
     width: $tb-figma-spacing-25;
             height: $tb-figma-spacing-25;
         
@@ -8698,11 +8672,11 @@
             border-left-color: $tb-figma-neutral-dark-2;
             border-right-color: $tb-figma-neutral-dark-2;
             border-top-color: $tb-figma-neutral-dark-2;
-            outline-color: k-color( base );
         
 }
     .k-fab.k-focus,.k-fab.k-state-focus,.k-fab.k-state-focused,.k-fab:focus{
     background-image: none;
+            outline-color: k-color( base );
             outline-style: none;
         
 }
@@ -10678,7 +10652,7 @@
     color: $tb-figma-neutral-dark-2;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-focus .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focus .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-focused .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:focus .k-link.k-menu-link .k-menu-link-text{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-focus .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focus .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-focused .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item:focus .k-link.k-menu-link .k-menu-link-text{
     color: $tb-figma-neutral-dark-2;
         
 }
@@ -11313,7 +11287,7 @@
     color: $tb-figma-neutral-dark-2;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-active .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-active .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link:active .k-menu-link-text{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-active .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-active .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link:active .k-menu-link-text{
     color: $tb-figma-neutral-dark-2;
         
 }
@@ -11321,7 +11295,7 @@
     color: $tb-figma-neutral-light;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-disabled .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item.k-state-disabled .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item:disabled .k-link.k-menu-link .k-menu-link-text{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item.k-disabled .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item.k-state-disabled .k-link.k-menu-link .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item:disabled .k-link.k-menu-link .k-menu-link-text{
     color: $tb-figma-neutral-light;
         
 }
@@ -12184,11 +12158,7 @@
     content: "\e03d";
         
 }
-    .k-dropdownlist .k-input-button .k-button-icon.k-icon.k-font-icon.k-i-caret-alt-down::before{
-    content: "\e03c";
-        
-}
-    .k-dropdownlist.k-picker.k-picker-md.k-rounded-md.k-picker-solid .k-input-button .k-button-icon.k-icon.k-font-icon.k-i-caret-alt-down{
+    .k-dropdownlist .k-input-button .k-button-icon.k-icon.k-font-icon.k-i-caret-alt-down{
     font-size: 20px;
         
 }
@@ -12698,7 +12668,7 @@
         
 }
     .k-button.k-button-lg.k-rounded-full.k-button-outline.k-button-outline-primary .k-button-icon.k-icon.k-font-icon{
-    font-size: 30px;
+    font-size: 25px;
         
 }
     .k-button.k-focus.k-rounded-full.k-button-solid-primary,.k-button.k-state-focus.k-rounded-full.k-button-solid-primary,.k-button.k-state-focused.k-rounded-full.k-button-solid-primary,.k-button:focus.k-rounded-full.k-button-solid-primary{
@@ -12985,29 +12955,29 @@
             padding-right: $tb-figma-spacing-5;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-asc-sm{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-asc-sm{
     font-family: DesignIconsFont_1;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-asc-sm::before{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-asc-sm::before{
     content: "\e047";
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-desc-sm{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-desc-sm{
     font-family: DesignIconsFont_1;
             font-size: 15px;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-desc-sm::before{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-sort-desc-sm::before{
     content: "\e048";
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-filter{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item .k-icon.k-font-icon.k-i-filter{
     font-size: 0;
             opacity: 0;
         
 }
-    .k-column-menu.k-grid-columnmenu-popup.k-popup .k-columnmenu-item-wrapper .k-columnmenu-item{
+    .k-grid-columnmenu-popup.k-popup .k-column-menu .k-columnmenu-item-wrapper .k-columnmenu-item{
     padding-top: 15px;
             padding-bottom: 15px;
             padding-right: 10px;
@@ -13083,7 +13053,7 @@
             outline-width: 1px;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link .k-menu-link-text{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link .k-menu-link-text{
     color: $tb-figma-primary;
         
 }
@@ -13096,7 +13066,7 @@
     color: $tb-figma-neutral-dark-2;
         
 }
-    .k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-hover .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hover .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hovered .k-menu-link-text,.k-menu-popup .k-group.k-menu-group .k-item.k-menu-item .k-link.k-menu-link:hover .k-menu-link-text{
+    .k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-hover .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hover .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link.k-state-hovered .k-menu-link-text,.k-menu-popup .k-menu-group .k-item.k-menu-item .k-link.k-menu-link:hover .k-menu-link-text{
     color: $tb-figma-primary-dark;
         
 }
@@ -15461,5 +15431,110 @@
             border-top-style: none;
             background-color: rgba(0,0,0,0);
             background-image: none;
+        
+}
+    .k-button.k-button-lg.k-rounded-full.k-button-solid-primary.k-icon-button .k-button-icon.k-icon.k-font-icon{
+    font-size: 30px;
+        
+}
+    .k-listbox .k-list .k-list-content .k-list-ul .k-list-item .k-list-item-text{
+                    @extend %tb-typography-fig-h6-medium;
+          color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-listbox .k-list .k-list-content .k-list-ul .k-list-item.k-selected{
+    background-color: $tb-figma-primary-light;
+            background-image: none;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
+            border-bottom-color: $tb-figma-primary;
+            border-left-color: $tb-figma-primary;
+            border-right-color: $tb-figma-primary;
+            border-top-color: $tb-figma-primary;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-top-style: solid;
+            outline-color: $tb-figma-primary-light-3;
+            outline-style: solid;
+            outline-width: 1px;
+            outline-offset: -2px;
+        
+}
+    .k-listbox .k-list .k-list-content .k-list-ul .k-list-item{
+    border-bottom-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-top-style: solid;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
+        
+}
+    .k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button{
+    border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 30px;
+            height: 30px;
+        
+}
+    .k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-hover,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-state-hover,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-state-hovered,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button:hover{
+                    @extend %tb-effects-figma-effects-2;
+      
+}
+    .k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button .k-icon.k-font-icon{
+    font-size: 20px;
+        
+}
+    .k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-hover .k-icon.k-font-icon,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-state-hover .k-icon.k-font-icon,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-state-hovered .k-icon.k-font-icon,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button:hover .k-icon.k-font-icon{
+    color: $tb-figma-primary-dark;
+        
+}
+    .k-listbox .k-list .k-list-content .k-list-ul .k-list-item.k-hover,.k-listbox .k-list .k-list-content .k-list-ul .k-list-item.k-state-hover,.k-listbox .k-list .k-list-content .k-list-ul .k-list-item.k-state-hovered,.k-listbox .k-list .k-list-content .k-list-ul .k-list-item:hover{
+                    @extend %tb-effects-fig-effect-2;
+          outline-style: none;
+            border-bottom-color: $tb-figma-primary-dark;
+            border-left-color: $tb-figma-primary-dark;
+            border-right-color: $tb-figma-primary-dark;
+            border-top-color: $tb-figma-primary-dark;
+        
+}
+    .k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-active .k-icon.k-font-icon,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button.k-state-active .k-icon.k-font-icon,.k-listbox .k-listbox-actions .k-button.k-button-solid.k-button-solid-base.k-icon-button:active .k-icon.k-font-icon{
+    color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-button.k-button-lg.k-button-outline.k-button-outline-primary.k-icon-button .k-button-icon.k-icon.k-font-icon{
+    font-size: 30px;
+        
+}
+    .k-button.k-button-lg.k-button-outline.k-button-outline-primary.k-icon-button{
+    padding-left: 10px;
+            padding-right: 10px;
+            width: $tb-figma-height-50;
+        
+}
+    .k-button.k-button-lg.k-button-solid-primary.k-icon-button{
+    width: $tb-figma-height-50;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        
+}
+    .k-button.k-button-lg.k-button-solid-primary.k-icon-button .k-button-icon.k-icon.k-font-icon{
+    font-size: 30px;
+        
+}
+    .k-button.k-hover.k-button-lg.k-button-link.k-button-link-primary .k-button-icon.k-icon.k-font-icon,.k-button.k-state-hover.k-button-lg.k-button-link.k-button-link-primary .k-button-icon.k-icon.k-font-icon,.k-button.k-state-hovered.k-button-lg.k-button-link.k-button-link-primary .k-button-icon.k-icon.k-font-icon,.k-button:hover.k-button-lg.k-button-link.k-button-link-primary .k-button-icon.k-icon.k-font-icon{
+    font-size: 25px;
+        
+}
+    .k-button.k-button-lg.k-button-link.k-button-link-primary{
+    column-gap: 10px;
         
 }
