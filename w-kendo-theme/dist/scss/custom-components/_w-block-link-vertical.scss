@@ -58,12 +58,15 @@
     color: $tb-figma-neutral-dark-2;
         
 }
+    .k-card.k-card-vertical.w-block-link-vertical:hover .k-icon.k-font-icon.k-i-star{
+    color: $tb-figma-primary-dark;
+        
+}
     .k-card.k-card-vertical.w-block-link-vertical:hover .w-icon-wrapper{
     background-color: initial;
             background-image: none;
-        
-}
-    .k-card.k-card-vertical.w-block-link-vertical:hover .k-icon.k-font-icon.k-i-star{
-    color: $tb-figma-primary-dark;
+            border-bottom-color: $tb-figma-primary-light-2;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
         
 }

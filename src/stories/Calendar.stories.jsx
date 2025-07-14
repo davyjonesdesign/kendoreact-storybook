@@ -3,7 +3,7 @@ import React from 'react';
 import { Calendar } from './Calendar';
 
 export default {
-  title: 'Date Inputs/Calendar',
+  title: 'Base/Date Inputs/Calendar',
   component: Calendar,
   argTypes: {
 

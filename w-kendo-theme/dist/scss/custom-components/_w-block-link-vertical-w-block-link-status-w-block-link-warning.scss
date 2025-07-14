@@ -11,3 +11,14 @@
     color: $tb-figma-status-warning;
         
 }
+    .k-card.k-card-vertical.w-block-link-vertical.w-block-link-status.w-block-link-warning .w-icon-wrapper{
+    background-color: $tb-figma-status-warning-2;
+            background-image: none;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical.w-block-link-status.w-block-link-warning:hover .w-icon-wrapper{
+    flex-direction: row;
+            background-color: initial;
+            background-image: none;
+        
+}

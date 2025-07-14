@@ -1,0 +1,133 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+import Styling from "./assets/styling.png";
+import Context from "./assets/context.png";
+import Docs from "./assets/docs.png";
+
+export const RightArrow = () => <svg 
+    viewBox="0 0 14 14" 
+    width="8px" 
+    height="14px" 
+    style={{ 
+      marginLeft: '4px',
+      display: 'inline-block',
+      shapeRendering: 'inherit',
+      verticalAlign: 'middle',
+      fill: 'currentColor',
+      'path fill': 'currentColor'
+    }}
+>
+  <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+</svg>
+
+<Meta title="Welcome" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # w-kendo
+
+    <div style={{ fontWeight: 400, fontSize: 18, marginTop: 8 }}>
+      This is the Storybook for Wheels KendoReact UI base components, styled with KendoReact ThemeBuilder.
+    </div>
+  </div>
+  <div className="sb-section">
+    <div className="sb-section-item">
+      <a
+        href="https://ui.wheels.com"
+        target="_blank"
+        rel="noopener"
+      >
+        Wheels design system documentation<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      <a
+        href="https://www.figma.com/design/fvkyqu7ihSQ15iFT03qiPY/w-kendo?node-id=0-1&p=f&t=o8iBwigJpl1MIvky-11"
+        target="_blank"
+        rel="noopener"
+      >
+        Figma w-kendo library<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      <a
+        href="https://www.telerik.com/kendo-react-ui/components/"
+        target="_blank"
+        rel="noopener"
+      >
+        KendoReact Components Documentation<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      <a
+        href="https://themebuilderapp.telerik.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        ThemeBuilder: Theming & Token Sync<RightArrow />
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sb-section-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .sb-section-item a p,
+  .sb-section-item a:visited,
+  .sb-section-item a:active {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0074d9 !important;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    background: #f4f8fb;
+    border-radius: 8px;
+    padding: 18px 18px 12px 18px;
+    transition: background 0.2s;
+    margin: 0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s, text-decoration 0.2s;
+    cursor: pointer;
+    box-shadow: none;
+  }
+
+  .sb-section-item a:hover,
+  .sb-section-item a:focus-visible {
+    text-decoration: underline !important;
+    background: none;
+  }
+  .sb-section-item a:hover p,
+  .sb-section-item a:focus-visible p {
+    text-decoration: underline !important;
+    color:rgb(13, 75, 119) !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+  }
+  `}
+</style>
