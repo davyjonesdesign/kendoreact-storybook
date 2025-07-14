@@ -25,5 +25,5 @@ Disabled.args = {
 
 export const Icon = Template.bind({});
 Icon.args = {
-  icon: 'check',
+  icon: 'letter-space',
 };

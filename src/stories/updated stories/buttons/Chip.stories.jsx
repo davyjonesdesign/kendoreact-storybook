@@ -1,40 +1,52 @@
 import React from 'react';
 import { Chip } from './Chip';
 
-export default {
+const meta = {
   title: 'Base/Buttons/Chip',
   component: Chip,
+  tags: ['autodocs'], // Enables auto-generated Docs tab
+  parameters: {
+    docs: {
+      description: {
+        component: 'A Chip component used to represent input, attribute, or action.',
+      },
+    },
+  },
   argTypes: {
-    text: { control: 'text' },
+    label: { control: 'text' },
     fillMode: {
       control: { type: 'radio' },
       options: ['solid', 'outline'],
     },
     disabled: { control: 'boolean' },
     removable: { control: 'boolean' },
+    removeIcon: { control: 'text' },
   },
 };
 
-// Solid Chip story
+export default meta;
+
+// Shared render function
+const ChipTemplate = (args) => <Chip {...args} />;
+
 export const Solid = {
-  render: (args) => <Chip {...args} />,
   args: {
     label: 'Solid Chip',
     fillMode: 'solid',
     disabled: false,
-    removeIcon: "x",
-    removable: true
+    removable: true,
+    removeIcon: 'x',
   },
+  render: (args) => <ChipTemplate {...args} />,
 };
 
-// Outline Chip story
 export const Outline = {
-  render: (args) => <Chip {...args} />,
   args: {
     label: 'Outline Chip',
     fillMode: 'outline',
     disabled: false,
-    removeIcon: "x",
-    removable: true
+    removable: true,
+    removeIcon: 'x',
   },
+  render: (args) => <ChipTemplate {...args} />,
 };

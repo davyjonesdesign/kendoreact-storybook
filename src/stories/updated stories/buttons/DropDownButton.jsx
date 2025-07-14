@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { DropDownButton as KendoDropDownButton } from "@progress/kendo-react-buttons";
-import './assets/index.scss';
+import '../../assets/index.scss';
 
 export const DropDownButton = ({label, ...props }) => {
   const items = [
