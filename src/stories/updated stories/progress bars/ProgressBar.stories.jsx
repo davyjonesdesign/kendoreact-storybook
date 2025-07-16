@@ -3,7 +3,7 @@ import { ProgressBar } from './ProgressBar';
 import { WLoadingBar } from './WLoadingBar';
 
 export default {
-  title: 'Base/Progress Bars/Progress Bar',
+  title: 'Base Components/Progress Bars/Progress Bar',
   component: ProgressBar,
   tags: ['autodocs'],
 };

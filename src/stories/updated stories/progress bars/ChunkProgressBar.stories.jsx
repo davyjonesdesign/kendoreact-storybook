@@ -5,7 +5,7 @@ import { WSubtleChunkBar } from './WSubtleChunkBar';
 import { WSubtleChunkBarSm } from './WSubtleChunkBarSm';
 
 export default {
-  title: 'Base/Progress Bars/Chunk Progress Bar',
+  title: 'Base Components/Progress Bars/Chunk Progress Bar',
   component: ChunkProgressBar,
   argTypes: {
 

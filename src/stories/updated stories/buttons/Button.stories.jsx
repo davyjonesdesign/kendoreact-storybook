@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from './Button';
+import customIcons from '../../assets/IconsList';
 
 const meta = {
-  title: 'Base/Buttons/Button',
+  title: 'Base Components/Buttons/Button',
   component: Button,
   tags: ['autodocs'], // Enables auto-generated Docs tab
   parameters: {
@@ -18,7 +19,10 @@ const meta = {
       control: { type: 'select' },
       options: ['solid', 'outline', 'link'],
     },
-    icon: { control: 'text' },
+    icon: {
+      control: { type: 'select' },
+      options: customIcons,
+    },
     disabled: { control: 'boolean' },
     togglable: { control: 'boolean' },
     toggled: { control: 'boolean' },
@@ -33,15 +37,19 @@ export default meta;
 
 // Shared render function
 const IconButton = (args) => (
-  <Button {...args} icon="letter-space" />
+  <Button {...args} />
 );
 
 export const Solid = {
   args: {
     label: 'Solid',
     fillMode: 'solid',
-    size: 'medium',
     disabled: false,
+    size: "medium",
+    icon: "plus",
+    togglable: false,
+    selected: false,
+    toggled: false
   },
   render: (args) => <IconButton {...args} />,
 };
@@ -50,8 +58,12 @@ export const Outline = {
   args: {
     label: 'Outline',
     fillMode: 'outline',
-    size: 'medium',
     disabled: false,
+    size: "medium",
+    icon: "plus",
+    togglable: false,
+    selected: false,
+    toggled: false
   },
   render: (args) => <IconButton {...args} />,
 };
@@ -60,8 +72,20 @@ export const Link = {
   args: {
     label: 'Link',
     fillMode: 'link',
-    size: 'medium',
     disabled: false,
+    size: "medium",
+    icon: "plus",
+    togglable: false,
+    selected: false,
+    toggled: false    
+
   },
   render: (args) => <IconButton {...args} />,
+};
+
+Button.defaultProps = {
+  size: 'medium',
+  disabled: false,
+  showIcon: true,
+  icon: 'plus',
 };

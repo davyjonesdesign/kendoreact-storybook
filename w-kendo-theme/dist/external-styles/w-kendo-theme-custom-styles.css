@@ -41,21 +41,792 @@ small {
 }
 
 /* custom icons */
-.w-icon-search {
+.w-i-search {
     font-size: 30px !important;
 }
 
-.k-icon-button:hover .w-icon-search {
+.k-icon-button:hover .w-i-search {
     color: var(--kendo-color-on-app-surface) !important;
 }
 
+.w-icon {
+    font-family: DesignIconsFont_1;
+}
+
+/* profile */
+.w-i-profile:before {
+    content: '\e001';
+}
+/* addProfile */
+.w-i-addProfile:before {
+    content: '\e002';
+}
+/* view */
+.w-i-view:before {
+    content: '\e003';
+}
+/* hideView */
+.w-i-hideView:before {
+    content: '\e004';
+}
+/* documents */
+.w-i-documents:before {
+    content: '\e005';
+}
+/* registrationRenewal */
+.w-i-registrationRenewal:before {
+    content: '\e006';
+}
+/* checklist */
+.w-i-checklist:before {
+    content: '\e007';
+}
+/* carPool */
+.w-i-carPool:before {
+    content: '\e008';
+}
+/* ellipsesHorizontal */
+.w-i-ellipsesHorizontal:before {
+    content: '\e009';
+}
+/* ellipsesVertical */
+.w-i-ellipsesVertical:before {
+    content: '\e00a';
+}
+/* filterControl */
+.w-i-filterControl:before {
+    content: '\e00b';
+}
+/* burger */
+.w-i-burger:before {
+    content: '\e00c';
+}
+/* mapPassport */
+.w-i-mapPassport:before {
+    content: '\e00d';
+}
+/* maintenanceHistory */
+.w-i-maintenanceHistory:before {
+    content: '\e00e';
+}
+/* pdf */
+.w-i-pdf:before {
+    content: '\e00f';
+}
+/* images */
+.w-i-images:before {
+    content: '\e010';
+}
+/* settings */
+.w-i-settings:before {
+    content: '\e011';
+}
+/* find */
+.w-i-find:before {
+    content: '\e012';
+}
+/* location */
+.w-i-location:before {
+    content: '\e013';
+}
+/* code */
+.w-i-code:before {
+    content: '\e014';
+}
+/* calendar */
+.w-i-calendar:before {
+    content: '\e015';
+}
+/* calendarRange */
+.w-i-calendarRange:before {
+    content: '\e016';
+}
+/* calendarTime */
+.w-i-calendarTime:before {
+    content: '\e017';
+}
+/* bin */
+.w-i-bin:before {
+    content: '\e018';
+}
+/* notification */
+.w-i-notification:before {
+    content: '\e019';
+}
+/* notificationActive */
+.w-i-notificationActive:before {
+    content: '\e01a';
+}
+/* evCharging */
+.w-i-evCharging:before {
+    content: '\e01b';
+}
+/* fuel */
+.w-i-fuel:before {
+    content: '\e01c';
+}
+/* toolsAndViolations */
+.w-i-toolsAndViolations:before {
+    content: '\e01d';
+}
+/* price */
+.w-i-price:before {
+    content: '\e01e';
+}
+/* minusCircle */
+.w-i-minusCircle:before {
+    content: '\e01f';
+}
+/* plusCircle */
+.w-i-plusCircle:before {
+    content: '\e020';
+}
+/* sustainability */
+.w-i-sustainability:before {
+    content: '\e021';
+}
+/* reimburse */
+.w-i-reimburse:before {
+    content: '\e022';
+}
+/* remarketing */
+.w-i-remarketing:before {
+    content: '\e023';
+}
+/* positiveReinforcement */
+.w-i-positiveReinforcement:before {
+    content: '\e024';
+}
+/* timeRemaining */
+.w-i-timeRemaining:before {
+    content: '\e025';
+}
+/* send */
+.w-i-send:before {
+    content: '\e026';
+}
+/* share */
+.w-i-share:before {
+    content: '\e027';
+}
+/* pay */
+.w-i-pay:before {
+    content: '\e028';
+}
+/* creditCard */
+.w-i-creditCard:before {
+    content: '\e029';
+}
+/* maintenanceAndRepair */
+.w-i-maintenanceAndRepair:before {
+    content: '\e02a';
+}
+/* agreement */
+.w-i-agreement:before {
+    content: '\e02b';
+}
+/* mileage */
+.w-i-mileage:before {
+    content: '\e02c';
+}
+/* purchase */
+.w-i-purchase:before {
+    content: '\e02d';
+}
+/* purchaseItem */
+.w-i-purchaseItem:before {
+    content: '\e02e';
+}
+/* email */
+.w-i-email:before {
+    content: '\e02f';
+}
+/* emailActive */
+.w-i-emailActive:before {
+    content: '\e030';
+}
+/* trips */
+.w-i-trips:before {
+    content: '\e031';
+}
+/* call */
+.w-i-call:before {
+    content: '\e032';
+}
+/* bookAVehicle */
+.w-i-bookAVehicle:before {
+    content: '\e033';
+}
+/* car */
+.w-i-car:before {
+    content: '\e034';
+}
+/* truck */
+.w-i-truck:before {
+    content: '\e035';
+}
+/* van */
+.w-i-van:before {
+    content: '\e036';
+}
+/* forklift */
+.w-i-forklift:before {
+    content: '\e037';
+}
+/* telematics */
+.w-i-telematics:before {
+    content: '\e038';
+}
+/* chevronRight */
+.w-i-chevronRight:before {
+    content: '\e039';
+}
+/* chevronRightLine */
+.w-i-chevronRightLine:before {
+    content: '\e03a';
+}
+/* chevronLeftLine */
+.w-i-chevronLeftLine:before {
+    content: '\e03b';
+}
+/* chevronDown */
+.w-i-chevronDown:before {
+    content: '\e03c';
+}
+/* chevronUp */
+.w-i-chevronUp:before {
+    content: '\e03d';
+}
+/* chevronLeft */
+.w-i-chevronLeft:before {
+    content: '\e03e';
+}
+/* arrowRight */
+.w-i-arrowRight:before {
+    content: '\e03f';
+}
+/* arrowLeft */
+.w-i-arrowLeft:before {
+    content: '\e040';
+}
+/* arrowUp */
+.w-i-arrowUp:before {
+    content: '\e041';
+}
+/* arrowDown */
+.w-i-arrowDown:before {
+    content: '\e042';
+}
+/* lease */
+.w-i-lease:before {
+    content: '\e043';
+}
+/* owner */
+.w-i-owner:before {
+    content: '\e044';
+}
+/* rentACar */
+.w-i-rentACar:before {
+    content: '\e045';
+}
 /* search */
-.w-icon-search:before {
-    content: '\e046'; /* Adds a glyph using the Unicode character number */
+.w-i-search:before {
+    content: '\e046';
+}
+/* sortUp */
+.w-i-sortUp:before {
+    content: '\e047';
+}
+/* sortDown */
+.w-i-sortDown:before {
+    content: '\e048';
+}
+/* directions */
+.w-i-directions:before {
+    content: '\e049';
+}
+/* performance */
+.w-i-performance:before {
+    content: '\e04a';
+}
+/* intersectingArrows */
+.w-i-intersectingArrows:before {
+    content: '\e04b';
+}
+/* phone */
+.w-i-phone:before {
+    content: '\e04c';
+}
+/* chat */
+.w-i-chat:before {
+    content: '\e04d';
+}
+/* serviceDue */
+.w-i-serviceDue:before {
+    content: '\e04e';
+}
+/* recall */
+.w-i-recall:before {
+    content: '\e04f';
+}
+/* odometer */
+.w-i-odometer:before {
+    content: '\e050';
+}
+/* copy */
+.w-i-copy:before {
+    content: '\e051';
+}
+/* plus */
+.w-i-plus:before {
+    content: '\e052';
+}
+/* minus */
+.w-i-minus:before {
+    content: '\e053';
+}
+/* cross */
+.w-i-cross:before {
+    content: '\e054';
+}
+/* urgent */
+.w-i-urgent:before {
+    content: '\e055';
+}
+/* chart */
+.w-i-chart:before {
+    content: '\e056';
+}
+/* video */
+.w-i-video:before {
+    content: '\e057';
+}
+/* camera */
+.w-i-camera:before {
+    content: '\e058';
+}
+/* phoneSimple */
+.w-i-phoneSimple:before {
+    content: '\e059';
+}
+/* play */
+.w-i-play:before {
+    content: '\e05a';
+}
+/* playFilled */
+.w-i-playFilled:before {
+    content: '\e05b';
+}
+/* pause */
+.w-i-pause:before {
+    content: '\e05c';
+}
+/* trafficLight */
+.w-i-trafficLight:before {
+    content: '\e05d';
+}
+/* windscreenRepair */
+.w-i-windscreenRepair:before {
+    content: '\e05e';
+}
+/* carwash */
+.w-i-carwash:before {
+    content: '\e05f';
+}
+/* discount */
+.w-i-discount:before {
+    content: '\e060';
+}
+/* dashboard */
+.w-i-dashboard:before {
+    content: '\e061';
+}
+/* reload */
+.w-i-reload:before {
+    content: '\e062';
+}
+/* export */
+.w-i-export:before {
+    content: '\e063';
+}
+/* download */
+.w-i-download:before {
+    content: '\e064';
+}
+/* upload */
+.w-i-upload:before {
+    content: '\e065';
+}
+/* blackOwned */
+.w-i-blackOwned:before {
+    content: '\e066';
+}
+/* womenOwned */
+.w-i-womenOwned:before {
+    content: '\e067';
+}
+/* veteranOwned */
+.w-i-veteranOwned:before {
+    content: '\e068';
+}
+/* familyOwned */
+.w-i-familyOwned:before {
+    content: '\e069';
+}
+/* attach */
+.w-i-attach:before {
+    content: '\e06a';
+}
+/* link */
+.w-i-link:before {
+    content: '\e06b';
+}
+/* star */
+.w-i-star:before {
+    content: '\e06c';
+}
+/* like */
+.w-i-like:before {
+    content: '\e06d';
+}
+/* fuelEconomy */
+.w-i-fuelEconomy:before {
+    content: '\e06e';
+}
+/* co2Emissions */
+.w-i-co2Emissions:before {
+    content: '\e06f';
+}
+/* idleUsage */
+.w-i-idleUsage:before {
+    content: '\e070';
+}
+/* newVehicleOrder */
+.w-i-newVehicleOrder:before {
+    content: '\e071';
+}
+/* number */
+.w-i-number:before {
+    content: '\e072';
+}
+/* verifyData */
+.w-i-verifyData:before {
+    content: '\e073';
+}
+/* edit */
+.w-i-edit:before {
+    content: '\e074';
+}
+/* starFilled */
+.w-i-starFilled:before {
+    content: '\e075';
+}
+/* merge */
+.w-i-merge:before {
+    content: '\e076';
+}
+/* home */
+.w-i-home:before {
+    content: '\e077';
+}
+/* lock */
+.w-i-lock:before {
+    content: '\e078';
+}
+/* updates */
+.w-i-updates:before {
+    content: '\e079';
+}
+/* connected */
+.w-i-connected:before {
+    content: '\e07a';
+}
+/* fax */
+.w-i-fax:before {
+    content: '\e07b';
+}
+/* filterTable */
+.w-i-filterTable:before {
+    content: '\e07c';
+}
+/* filter */
+.w-i-filter:before {
+    content: '\e07d';
+}
+/* logout */
+.w-i-logout:before {
+    content: '\e07e';
+}
+/* fleetPolicy */
+.w-i-fleetPolicy:before {
+    content: '\e07f';
+}
+/* questions */
+.w-i-questions:before {
+    content: '\e080';
+}
+/* submitMiles */
+.w-i-submitMiles:before {
+    content: '\e081';
+}
+/* singleTracking */
+.w-i-singleTracking:before {
+    content: '\e082';
+}
+/* manualEntry */
+.w-i-manualEntry:before {
+    content: '\e083';
+}
+/* flexibleTracking */
+.w-i-flexibleTracking:before {
+    content: '\e084';
+}
+/* automaticTracking */
+.w-i-automaticTracking:before {
+    content: '\e085';
+}
+/* insuranceEffective */
+.w-i-insuranceEffective:before {
+    content: '\e086';
+}
+/* plateInfo */
+.w-i-plateInfo:before {
+    content: '\e087';
+}
+/* mvr */
+.w-i-mvr:before {
+    content: '\e088';
+}
+/* training */
+.w-i-training:before {
+    content: '\e089';
+}
+/* services */
+.w-i-services:before {
+    content: '\e08a';
+}
+/* requestHelp */
+.w-i-requestHelp:before {
+    content: '\e08b';
+}
+/* customize */
+.w-i-customize:before {
+    content: '\e08c';
+}
+/* bookmark */
+.w-i-bookmark:before {
+    content: '\e08d';
+}
+/* division */
+.w-i-division:before {
+    content: '\e08e';
+}
+/* save */
+.w-i-save:before {
+    content: '\e08f';
+}
+/* bold */
+.w-i-bold:before {
+    content: '\e090';
+}
+/* italic */
+.w-i-italic:before {
+    content: '\e091';
+}
+/* underline */
+.w-i-underline:before {
+    content: '\e092';
+}
+/* alignLeft */
+.w-i-alignLeft:before {
+    content: '\e093';
+}
+/* alignRight */
+.w-i-alignRight:before {
+    content: '\e094';
+}
+/* alignCenter */
+.w-i-alignCenter:before {
+    content: '\e095';
+}
+/* justify */
+.w-i-justify:before {
+    content: '\e096';
+}
+/* clock */
+.w-i-clock:before {
+    content: '\e097';
+}
+/* success */
+.w-i-success:before {
+    content: '\e098';
+}
+/* successSmall */
+.w-i-successSmall:before {
+    content: '\e099';
+}
+/* warning */
+.w-i-warning:before {
+    content: '\e09a';
+}
+/* warningSmall */
+.w-i-warningSmall:before {
+    content: '\e09b';
+}
+/* error */
+.w-i-error:before {
+    content: '\e09c';
+}
+/* errorSmall */
+.w-i-errorSmall:before {
+    content: '\e09d';
+}
+/* info */
+.w-i-info:before {
+    content: '\e09e';
+}
+/* infoOutline */
+.w-i-infoOutline:before {
+    content: '\e09f';
+}
+/* infoSmall */
+.w-i-infoSmall:before {
+    content: '\e0a0';
+}
+/* progress */
+.w-i-progress:before {
+    content: '\e0a1';
+}
+/* progressSmall */
+.w-i-progressSmall:before {
+    content: '\e0a2';
+}
+/* rotateLeft */
+.w-i-rotateLeft:before {
+    content: '\e0a3';
+}
+/* rotateRight */
+.w-i-rotateRight:before {
+    content: '\e0a4';
+}
+/* scan */
+.w-i-scan:before {
+    content: '\e0a5';
+}
+/* on */
+.w-i-on:before {
+    content: '\e0a6';
+}
+/* questionsPlain */
+.w-i-questionsPlain:before {
+    content: '\e0a7';
+}
+/* unpin */
+.w-i-unpin:before {
+    content: '\e0a8';
+}
+/* celebrationOutline */
+.w-i-celebrationOutline:before {
+    content: '\e0a9';
+}
+/* drag */
+.w-i-drag:before {
+    content: '\e0aa';
+}
+/* list */
+.w-i-list:before {
+    content: '\e0ab';
+}
+/* pin */
+.w-i-pin:before {
+    content: '\e0ac';
+}
+/* pinned */
+.w-i-pinned:before {
+    content: '\e0ad';
+}
+/* select */
+.w-i-select:before {
+    content: '\e0ae';
+}
+/* unpinned */
+.w-i-unpinned:before {
+    content: '\e0af';
+}
+/* mapStart */
+.w-i-mapStart:before {
+    content: '\e0b0';
+}
+/* mapEnd */
+.w-i-mapEnd:before {
+    content: '\e0b1';
+}
+/* collapse */
+.w-i-collapse:before {
+    content: '\e0b2';
+}
+/* expand */
+.w-i-expand:before {
+    content: '\e0b3';
+}
+/* keyboard */
+.w-i-keyboard:before {
+    content: '\e0b4';
+}
+/* oil */
+.w-i-oil:before {
+    content: '\e0b5';
+}
+/* brake */
+.w-i-brake:before {
+    content: '\e0b6';
+}
+/* calendarSingle */
+.w-i-calendarSingle:before {
+    content: '\e0b7';
+}
+/* progressOutline */
+.w-i-progressOutline:before {
+    content: '\e0b8';
+}
+/* newVehicleShine */
+.w-i-newVehicleShine:before {
+    content: '\e0b9';
+}
+/* recommendation */
+.w-i-recommendation:before {
+    content: '\e0ba';
+}
+/* webpage */
+.w-i-webpage:before {
+    content: '\e0bb';
+}
+/* replaceVehicle */
+.w-i-replaceVehicle:before {
+    content: '\e0bc';
+}
+/* retainVehicle */
+.w-i-retainVehicle:before {
+    content: '\e0bd';
+}
+/* new */
+.w-i-new:before {
+    content: '\e0be';
+}
+/* battery */
+.w-i-battery:before {
+    content: '\e0bf';
+}
+/* tirePressure */
+.w-i-tirePressure:before {
+    content: '\e0c0';
+}
+/* airFilter */
+.w-i-airFilter:before {
+    content: '\e0c1';
+}
+/* connectedVehicle */
+.w-i-connectedVehicle:before {
+    content: '\e0c2';
 }
 
-/* chevron down */
-
-.w-icon-chevronDown:before {
-    content: '\e03c'; /* Adds a glyph using the Unicode character number */
-}

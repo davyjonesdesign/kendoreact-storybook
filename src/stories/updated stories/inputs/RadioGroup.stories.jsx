@@ -2,7 +2,7 @@ import React from 'react';
 import { RadioGroup } from './RadioGroup';
 
 const meta = {
-  title: 'Base/Inputs/Radio Group',
+  title: 'Base Components/Inputs/Radio Group',
   component: RadioGroup,
   tags: ['autodocs'],
 };

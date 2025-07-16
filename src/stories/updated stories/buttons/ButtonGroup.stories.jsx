@@ -3,7 +3,7 @@ import React from 'react';
 import { ButtonGroup } from './ButtonGroup';
 
 export default {
-  title: 'Base/Buttons/ButtonGroup',
+  title: 'Base Components/Buttons/ButtonGroup',
   component: ButtonGroup,
   argTypes: {
   },

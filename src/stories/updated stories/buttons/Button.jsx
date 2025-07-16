@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as KendoButton } from "@progress/kendo-react-buttons";
+
 import '../../assets/index.scss';
 
-export const Button = ({ label, ...props }) => {
+export const Button = ({ label, icon, showIcon, ...props }) => {
   const hasLabel = typeof label === 'string' && label.trim() !== '';
 
   return (
@@ -13,6 +14,9 @@ export const Button = ({ label, ...props }) => {
         rounded="full"
         {...props}
       >
+        {showIcon && (
+          <span className={`w-icon k-icon k-font-icon k-button-icon w-i-${icon}`} />
+        )}
         {label}
       </KendoButton>
     ) : (
@@ -20,7 +24,11 @@ export const Button = ({ label, ...props }) => {
         themeColor="primary"
         rounded="full"
         {...props}
-      />
+      >
+        {showIcon && (
+          <span className={`w-icon w-i-${icon}`} />
+        )}
+      </KendoButton>
     )
   );
 };
@@ -29,13 +37,10 @@ Button.propTypes = {
   label: PropTypes.string,
   disabled: PropTypes.bool,
   fillMode: PropTypes.oneOf(['solid', 'outline', 'link']),
-  icon: PropTypes.string,
-  iconClass: PropTypes.string,
-  imageAlt: PropTypes.string,
-  iconUrl: PropTypes.string,
-  selected: PropTypes.bool,
   size: PropTypes.oneOf(['medium', 'large']),
-  togglable: PropTypes.bool
+  icon: PropTypes.string,
+  togglable: PropTypes.bool,
+  selected: PropTypes.bool
 };
 
 Button.defaultProps = {

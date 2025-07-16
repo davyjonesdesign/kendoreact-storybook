@@ -12,22 +12,15 @@ export const Chip = ({label, ...props }) => {
 };
 
 Chip.propTypes = {
-  ariaDescribedBy: PropTypes.string,
-  children: PropTypes.element,
   className: PropTypes.string,
-  dataItem: PropTypes.node,
   dir: PropTypes.oneOf(['rtl', 'ltr', 'auto']),
   disabled: PropTypes.bool,
   fillMode: PropTypes.oneOf(['solid', 'outline']),
-  icon: PropTypes.string,
-  id: PropTypes.string,
+  themeColor: PropTypes.oneOf(['base', 'info', 'success', 'warning', 'error']),
   removable: PropTypes.bool,
   removeIcon: PropTypes.string,
   selected: PropTypes.bool,
-  selectedIcon: PropTypes.string,
-  tabIndex: PropTypes.number,
   text: PropTypes.string,
-  themeColor: PropTypes.oneOf(['base', 'info', 'success', 'warning', 'error']),
   value: PropTypes.node
 };
 

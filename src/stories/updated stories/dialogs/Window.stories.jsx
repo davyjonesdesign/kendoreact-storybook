@@ -2,7 +2,7 @@ import React from 'react';
 import { Window } from './Window';
 
 const meta = {
-  title: 'Base/Dialogs/Window',
+  title: 'Base Components/Dialogs/Window',
   component: Window,
   tags: ['autodocs'],
 };

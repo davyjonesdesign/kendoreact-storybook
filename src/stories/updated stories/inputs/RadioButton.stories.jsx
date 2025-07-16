@@ -2,7 +2,7 @@ import React from 'react';
 import { RadioButton } from './RadioButton';
 
 const meta = {
-  title: 'Base/Inputs/Radio Button',
+  title: 'Base Components/Inputs/Radio Button',
   component: RadioButton,
   tags: ['autodocs'],
 };

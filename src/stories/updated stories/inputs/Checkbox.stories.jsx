@@ -2,7 +2,7 @@ import React from 'react';
 import { Checkbox } from './Checkbox';
 
 const meta = {
-  title: 'Base/Inputs/Checkbox',
+  title: 'Base Components/Inputs/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
 };

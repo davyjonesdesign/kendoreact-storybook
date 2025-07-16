@@ -2,7 +2,7 @@ import React from 'react';
 import { Chip } from './Chip';
 
 const meta = {
-  title: 'Base/Buttons/Chip',
+  title: 'Base Components/Buttons/Chip',
   component: Chip,
   tags: ['autodocs'], // Enables auto-generated Docs tab
   parameters: {
@@ -17,6 +17,10 @@ const meta = {
     fillMode: {
       control: { type: 'radio' },
       options: ['solid', 'outline'],
+    },
+    themeColor: {
+      control: { type: 'select' },
+      options: ['base', 'info', 'success', 'warning', 'error'],
     },
     disabled: { control: 'boolean' },
     removable: { control: 'boolean' },
