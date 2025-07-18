@@ -24,7 +24,7 @@ export default {
   },
 };
 
-export const Primary = {
+export const Outline = {
   args: {
     fillMode: "outline",
     buttonCount: 3,
@@ -33,5 +33,17 @@ export const Primary = {
     width: 'auto',
     className: '',
   },
-  name: 'Button Group',
+  name: 'Button Group Outline',
 };
+
+export const Solid = {
+  args: {
+    fillMode: "solid",
+    buttonCount: 3,
+    disabled: false,        
+    dir: 'auto',
+    width: 'auto',
+    className: '',
+  },
+  name: 'Button Group Solid',
+}
