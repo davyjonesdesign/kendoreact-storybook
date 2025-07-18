@@ -6018,17 +6018,13 @@
         
 }
     .expansion-panel-sm.k-expander.k-expanded{
-    row-gap: $tb-figma-spacing-10;
+    row-gap: 0px;
         
 }
     .expansion-panel-sm.k-expander.k-expanded .k-expander-content-wrapper .k-expander-content{
                     @extend %tb-typography-archived-p;
           padding-bottom: 0px;
             padding-left: 0px;
-        
-}
-    .expansion-panel-sm.k-expander.k-expanded .k-expander-content-wrapper{
-    margin-bottom: $tb-figma-spacing-20;
         
 }
     .k-expander.k-expanded .k-expander-content-wrapper .k-expander-content{
@@ -15593,5 +15589,11 @@
             border-bottom-right-radius: 0px;
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
+        
+}
+    .expansion-panel-sm.k-expander.k-expanded .k-expander-content-wrapper{
+    margin-bottom: 0px;
+            padding-left: 0px;
+            padding-bottom: 20px;
         
 }

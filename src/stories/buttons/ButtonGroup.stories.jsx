@@ -1,10 +1,17 @@
 import React from 'react';
-
 import { ButtonGroup } from './ButtonGroup';
 
-export default {
-  title: 'Base Components/Buttons/ButtonGroup',
+const meta = {
+  title: 'Base Kendo Components/Buttons/ButtonGroup',
   component: ButtonGroup,
+  tags: ['autodocs'], // Enables auto-generated Docs tab
+  parameters: {
+    docs: {
+      description: {
+        component: 'A ButtonGroup component used to group related buttons together.',
+      },
+    },
+  },
   argTypes: {
     disabled: { control: 'boolean' },
     width: { control: 'text' },
@@ -24,26 +31,22 @@ export default {
   },
 };
 
+export default meta;
+
+// Shared render function
+const ButtonGroupTemplate = (args) => <ButtonGroup {...args} />;
+
 export const Outline = {
   args: {
-    fillMode: "outline",
-    buttonCount: 3,
-    disabled: false,
-    dir: 'auto',
-    width: 'auto',
-    className: '',
+    buttonCount: 3
   },
-  name: 'Button Group Outline',
+  render: (args) => <ButtonGroupTemplate {...args} />,
 };
 
 export const Solid = {
   args: {
-    fillMode: "solid",
-    buttonCount: 3,
-    disabled: false,        
-    dir: 'auto',
-    width: 'auto',
-    className: '',
+    fillMode: 'solid',
+    buttonCount: 3
   },
-  name: 'Button Group Solid',
-}
+  render: (args) => <ButtonGroupTemplate {...args} />,
+};

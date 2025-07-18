@@ -9,7 +9,7 @@ import {
 } from '@progress/kendo-react-layout';
 
 export default {
-  title: 'Base Components/Custom/w-block-link/Vertical Block Link',
+  title: 'Base Kendo Components/Custom/w-block-link/Vertical Block Link',
   component: WBlockLink,
   tags: ['autodocs'],
   argTypes: {

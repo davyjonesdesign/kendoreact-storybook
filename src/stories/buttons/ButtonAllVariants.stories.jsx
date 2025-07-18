@@ -4,7 +4,7 @@ import { Switch } from '@progress/kendo-react-inputs';
 import '../assets/index.scss';
 
 export default {
-  title: 'Base Components/Buttons/Button/All Variants',
+  title: 'Base Kendo Components/Buttons/Button/All Variants',
   component: Button,
 };
 

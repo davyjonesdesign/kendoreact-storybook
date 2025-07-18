@@ -2,7 +2,7 @@ import React from 'react';
 import { RadioGroup } from './RadioGroup';
 
 const meta = {
-  title: 'Base Components/Inputs/Radio Group',
+  title: 'Base Kendo Components/Inputs/Radio Group',
   component: RadioGroup,
   tags: ['autodocs'],
 };

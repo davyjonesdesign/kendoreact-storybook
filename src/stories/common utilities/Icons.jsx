@@ -10,15 +10,8 @@ const Icons = ({ className, size, themeColor, iconName }) => {
 
   return (
     <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-        alignItems: 'center'
-      }}
     >
       {iconsToRender.map((name) => (
-          <div style={{ display: 'flex', justifyContent: 'center', minWidth: '20%', marginBottom: '4rem' }}>
             <Icon
               name={name}
               size={size}
@@ -26,7 +19,6 @@ const Icons = ({ className, size, themeColor, iconName }) => {
               className={`w-icon w-i-${name} k-i-${name} ${className || ''}`.trim()}
               aria-hidden="true"
             />
-          </div>
       ))}
     </div>
   );
@@ -34,7 +26,7 @@ const Icons = ({ className, size, themeColor, iconName }) => {
 
 Icons.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.oneOf(['default', 'xsmall', 'small', 'medium', 'large', 'xlarge']),
+  size: PropTypes.oneOf(['default', 'xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge']),
   themeColor: PropTypes.oneOf([
     'primary', 'secondary', 'error', 'info', 'success', 'warning',
     'dark', 'light', 'inverse'

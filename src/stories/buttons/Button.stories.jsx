@@ -3,7 +3,7 @@ import { Button } from './Button';
 import customIcons from '../assets/IconsList';
 
 const meta = {
-  title: 'Base Components/Buttons/Button',
+  title: 'Base Kendo Components/Buttons/Button',
   component: Button,
   tags: ['autodocs'], // Enables auto-generated Docs tab
   parameters: {

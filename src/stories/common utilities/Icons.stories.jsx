@@ -3,7 +3,7 @@ import Icons from './Icons';
 import customIcons from '../assets/IconsList';
 
 const meta = {
-  title: 'Base Components/Common Utilities/Icons',
+  title: 'Base Kendo Components/Common Utilities/Icons',
   component: Icons,
   tags: ['autodocs'],
   argTypes: {

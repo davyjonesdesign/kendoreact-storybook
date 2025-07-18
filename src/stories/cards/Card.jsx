@@ -4,6 +4,7 @@ import {
   Card as KendoCard,
 } from "@progress/kendo-react-layout";
 
+
 import '../assets/index.scss';
 
 export const Card = ({
@@ -23,7 +24,7 @@ Card.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   dir: PropTypes.oneOf(['ltr', 'rtl', 'auto']),
-  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
+  // orientation: PropTypes.oneOf(['horizontal', 'vertical']),
   style: PropTypes.any,
   type: PropTypes.oneOf(['default', 'primary', 'info', 'success', 'warning', 'error']),
   icon: PropTypes.node,

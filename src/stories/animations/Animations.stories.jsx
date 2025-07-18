@@ -2,7 +2,7 @@ import React from 'react';
 import { Animations } from './Animations';
 
 export default {
-  title: 'Base Components/Animation/Animation Previews',
+  title: 'Base Kendo Components/Animation/Animation Previews',
   component: Animations,
 };
 

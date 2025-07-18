@@ -2,7 +2,7 @@ import React from 'react';
 import { Chip } from './Chip';
 
 const meta = {
-  title: 'Base Components/Buttons/Chip',
+  title: 'Base Kendo Components/Buttons/Chip',
   component: Chip,
   tags: ['autodocs'], // Enables auto-generated Docs tab
   parameters: {
