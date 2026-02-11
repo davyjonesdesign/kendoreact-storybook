@@ -1,0 +1,37 @@
+import React from 'react';
+import '../assets/index.scss';
+
+interface WSubtleChunkBarProps {
+  value?: number;
+  min?: number;
+  max?: number;
+  disabled?: boolean;
+  dir?: 'ltr' | 'rtl' | 'auto';
+}
+
+export const WSubtleChunkBar: React.FC<WSubtleChunkBarProps> = ({
+  value = 60,
+  min = 0,
+  max = 100,
+  disabled = false,
+  dir = 'ltr'
+}) => (
+  <div
+    className="w-subtle-chunk-bar k-progressbar k-chunk-progressbar k-progressbar-horizontal"
+    tabIndex={0}
+    role="progressbar"
+    aria-valuemin={min}
+    aria-valuemax={max}
+    aria-valuenow={value}
+    dir={dir}
+  >
+    <ul className="k-progressbar-chunks k-reset">
+      <li className="k-progressbar-chunk k-first k-selected"></li>
+      <li className="k-progressbar-chunk k-selected"></li>
+      <li className="k-progressbar-chunk k-selected"></li>
+      <li className="k-progressbar-chunk k-selected"></li>
+      <li className="k-progressbar-chunk"></li>
+      <li className="k-progressbar-chunk k-last"></li>
+    </ul>
+  </div>
+);

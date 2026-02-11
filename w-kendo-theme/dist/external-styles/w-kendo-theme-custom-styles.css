@@ -18,6 +18,10 @@ small {
     font-size: 12px;
 }
 
+.k-window .k-window-titlebar .k-window-titlebar-actions .k-window-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button .k-icon.k-font-icon.k-i-x.k-button-icon {
+    color: var(--tb-figma-primary) !important;
+}
+
 .k-calendar-thead .k-calendar-tr, .k-calendar-tbody .k-calendar-tr  {
     width: 100%;
     display: flex;
@@ -51,6 +55,10 @@ small {
 
 .w-icon {
     font-family: DesignIconsFont_1;
+}
+
+.w-icon:before {
+    content: '\e000';
 }
 
 /* profile */
@@ -829,4 +837,5 @@ small {
 .w-i-connectedVehicle:before {
     content: '\e0c2';
 }
+
 

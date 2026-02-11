@@ -70,3 +70,11 @@
             background-image: none;
         
 }
+    .k-card.k-card-vertical.w-block-link-vertical.w-block-link-mini .k-icon.k-font-icon.w-icon{
+    color: $tb-figma-primary;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical.w-block-link-mini .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e046";
+        
+}

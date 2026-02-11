@@ -59,7 +59,7 @@
         
 }
     .k-card.w-block-link-vertical.k-card-vertical .k-notification-content{
-                    @extend %tb-typography-fig-h6-heavy;
+                    @extend %tb-typography-fig-h6-600;
           text-align: left;
             margin-top: 1px;
             color: $tb-figma-neutral-dark-2;
@@ -95,12 +95,69 @@
             border-top-color: $tb-figma-primary;
         
 }
+    .w-subtle-chunk-bar.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunks.k-reset{
+    border-bottom-left-radius: $tb-figma-border-radius-full;
+            border-bottom-right-radius: $tb-figma-border-radius-full;
+            border-top-left-radius: $tb-figma-border-radius-full;
+            border-top-right-radius: $tb-figma-border-radius-full;
+            overflow: hidden;
+            column-gap: 5px;
+        
+}
+    .w-subtle-chunk-bar.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal{
+    background-color: initial;
+            background-image: none;
+            width: 100%;
+        
+}
+    .w-subtle-chunk-bar.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk.k-first.k-selected{
+    background-color: $tb-figma-primary-light;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk.k-selected{
+    background-color: $tb-figma-primary-light;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk{
+    background-color: $tb-figma-neutral-light-2;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar-sm.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal{
+    background-color: initial;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar-sm.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunks.k-reset{
+    column-gap: 3px;
+        
+}
+    .w-subtle-chunk-bar-sm.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk.k-first.k-selected{
+    min-width: 5px;
+            background-color: $tb-figma-status-error;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar-sm.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk.k-selected{
+    min-width: 5px;
+            background-color: $tb-figma-primary-light;
+            background-image: none;
+        
+}
+    .w-subtle-chunk-bar-sm.k-progressbar.k-chunk-progressbar.k-progressbar-horizontal .k-progressbar-chunk{
+    min-width: 5px;
+            background-color: $tb-figma-status-info-2;
+            background-image: none;
+        
+}
     .k-card.w-block-link-vertical.k-card-vertical .k-notification.inline-plain.k-notification-warning{
-                    @extend %tb-typography-fig-h6-heavy;
+                    @extend %tb-typography-fig-h6-600;
       
 }
     .w-input-odometer.k-input.k-input-md.k-rounded-md.k-input-solid.k-disabled,.w-input-odometer.k-input.k-input-md.k-rounded-md.k-input-solid.k-state-disabled,.w-input-odometer.k-input.k-input-md.k-rounded-md.k-input-solid:disabled{
-                    @extend %tb-typography-fig-h4-medium;
+                    @extend %tb-typography-fig-h4-600;
           color: $tb-figma-neutral-dark;
             height: 70px;
             text-align: center;
@@ -109,6 +166,65 @@
             min-width: 30px;
             flex-direction: row;
             display: inline-block;
+        
+}
+    .w-odometer-box .w-h4-heavy{
+                    @extend %tb-typography-fig-h4-heavy;
+          width: auto;
+            color: $tb-figma-neutral-dark-2;
+        
+}
+    .w-odometer-box{
+                    @extend %tb-typography-fig-h4-heavy;
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            height: 70px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            min-width: 40px;
+            background-color: $tb-figma-neutral-light-2;
+            background-image: none;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
+            border-bottom-color: $tb-figma-neutral;
+            border-bottom-style: solid;
+            border-left-color: $tb-figma-neutral;
+            border-left-style: solid;
+            border-right-color: $tb-figma-neutral;
+            border-right-style: solid;
+            border-top-color: $tb-figma-neutral;
+            border-top-style: solid;
+            max-width: 70px;
+            width: 100%;
+            min-height: unset;
+        
+}
+    .w-odometer-box .w-h3-heavy{
+                    @extend %tb-typography-fig-h3;
+          color: $tb-figma-neutral-dark-2;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        
+}
+    .w-odometer-boxes{
+    display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            max-width: 520px;
+            min-width: 300px;
+            width: 100%;
+            align-items: center;
         
 }
     .k-window.k-dialog.w-dialog-status{

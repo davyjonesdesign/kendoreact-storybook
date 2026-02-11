@@ -21,3 +21,12 @@
             background-image: none;
         
 }
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-error .k-icon.k-font-icon.w-icon.w-i-error{
+    font-size: 25px;
+            color: $tb-figma-status-error;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-error .w-icon-wrapper .k-icon.k-font-icon.w-icon.w-i-error::before{
+    content: "\e09c";
+        
+}

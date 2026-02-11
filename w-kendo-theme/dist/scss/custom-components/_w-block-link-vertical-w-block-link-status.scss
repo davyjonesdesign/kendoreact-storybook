@@ -15,7 +15,7 @@
         
 }
     .k-card.k-card-vertical.w-block-link-vertical.w-block-link-status{
-    row-gap: 10px;
+    row-gap: 5px;
         
 }
     .k-card.k-card-vertical.w-block-link-vertical.w-block-link-status .k-card-title{
@@ -37,5 +37,12 @@
     color: $tb-figma-status-info;
             font-size: 15px;
             margin-top: -0.5px;
+            display: inline-block;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical.w-block-link-status .k-icon.k-font-icon.w-icon.w-i-info{
+    font-family: DesignIconsFont_1;
+            color: $tb-figma-status-info;
+            font-size: 15px;
         
 }

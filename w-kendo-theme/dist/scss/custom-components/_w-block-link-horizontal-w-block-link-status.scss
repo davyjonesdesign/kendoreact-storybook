@@ -35,7 +35,7 @@
         
 }
     .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status .k-icon.k-font-icon.k-i-star{
-    font-size: 30px;
+    font-size: 25px;
             color: $tb-figma-status-info;
         
 }
@@ -50,5 +50,14 @@
 }
     .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status .k-icon.k-font-icon.w-k-i-info{
     font-family: DesignIconsFont_1;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status .k-icon.k-font-icon.w-icon.w-i-info{
+    font-size: 25px;
+            color: $tb-figma-status-info;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status .w-icon-wrapper .k-icon.k-font-icon.w-icon.w-i-info::before{
+    content: "\e09e";
         
 }

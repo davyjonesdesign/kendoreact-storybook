@@ -9,7 +9,7 @@
             height: 120px;
             align-items: stretch;
             justify-content: start;
-            row-gap: 10px;
+            row-gap: 5px;
             min-width: 120px;
             align-self: stretch;
             padding-bottom: 10px;
@@ -20,8 +20,9 @@
     overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            font-size: 12px;
-            display: none;
+            font-size: 12px !important;
+            display: block;
+            font-family: Inter;
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper{
@@ -43,7 +44,7 @@
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .k-card-title{
-                    @extend %tb-typography-fig-h6-heavy;
+                    @extend %tb-typography-fig-h6-600;
       
 }
     .k-card.k-card-vertical.w-block-link-vertical .k-card-header{
@@ -52,6 +53,10 @@
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 0px;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e08a";
         
 }
     .k-card.k-card-vertical.w-block-link-vertical .k-icon.k-font-icon.k-i-star{
@@ -68,5 +73,31 @@
             border-bottom-color: $tb-figma-primary-light-2;
             border-bottom-style: solid;
             border-bottom-width: 1px;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e08a";
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .k-icon.k-font-icon.k-i-star.w-block-link-status-icon{
+    display: none;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e08a";
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .k-icon.k-font-icon.k-i-star.w-block-link-status-icon-none{
+    display: none;
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e08a";
+        
+}
+    .k-card.k-card-vertical.w-block-link-vertical .k-icon.k-font-icon.w-icon{
+    color: $tb-figma-neutral-dark-2;
+            font-family: DesignIconsFont_1;
+            font-size: 50px;
         
 }

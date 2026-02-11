@@ -27,7 +27,7 @@
         
 }
     .k-card.w-block-link-horizontal.k-card-horizontal .k-icon.k-font-icon{
-    font-family: des;
+    font-family: DesignIconsFont_1;
         
 }
     .k-card.w-block-link-horizontal.k-card-horizontal .k-icon.k-font-icon.k-i-star{
@@ -115,13 +115,25 @@
         
 }
     .k-card.k-card-horizontal.w-block-link-horizontal .k-card-header{
-    display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: stretch;
-            align-self: stretch;
-            overflow-x: hidden;
+    overflow-x: hidden;
             flex-shrink: 1;
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal{
+    min-height: 50px;
+            max-height: 60px;
+            max-width: 540px;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            column-gap: 5px;
         
 }
     .k-card.k-card-horizontal.w-block-link-horizontal .k-card-subtitle{
@@ -144,18 +156,78 @@
     min-width: 50px;
         
 }
-    .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.k-i-star{
-    font-size: 30px;
-        
-}
     .k-card.k-card-horizontal.w-block-link-horizontal .w-trailing-icon-wrapper{
     height: 60px;
-            min-width: 30px;
-            padding-right: 10px;
+            min-width: 20px;
+            padding-right: 0px;
             padding-left: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            width: 20px;
         
 }
     .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.w-i-custom{
     font-family: DesignIconsFont_1;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.w-icon{
+    font-size: 20px;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal .w-icon-wrapper .k-icon.k-font-icon.w-icon::before{
+    content: "\e08a";
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.w-icon.w-icon-trailing{
+    font-size: 20px;
+            color: $tb-figma-primary;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:hover .k-icon.k-font-icon.w-icon{
+    color: $tb-figma-primary-dark;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:hover .k-icon.k-font-icon.w-icon.w-icon-trailing{
+    color: $tb-figma-primary-dark;
+            margin-right: -10px;
+            transition-duration: 150ms;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:active .k-icon.k-font-icon.w-icon.w-icon-trailing{
+    margin-right: -20px;
+            transition-duration: 100ms;
+            transition-timing-function: ease;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.w-icon.w-i-services{
+    font-size: 30px;
+            color: $tb-figma-primary;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal .k-icon.k-font-icon.w-icon.w-i-chevronRight{
+    color: $tb-figma-primary;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:hover .k-icon.k-font-icon.w-icon.w-i-services{
+    color: $tb-figma-primary-dark;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:hover .k-icon.k-font-icon.w-icon.w-i-chevronRight{
+    color: $tb-figma-primary-dark;
+            margin-right: -10px;
+            transition-timing-function: ease;
+            transition-duration: 100ms;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:active .k-card-subtitle{
+    color: $tb-figma-neutral-dark;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:active .k-icon.k-font-icon.w-icon.w-i-services{
+    color: $tb-figma-primary-dark;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal:active .k-icon.k-font-icon.w-icon.w-i-chevronRight{
+    margin-right: -20px;
         
 }

@@ -16,3 +16,12 @@
     content: "\e09a";
         
 }
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-warning .k-icon.k-font-icon.w-icon.w-i-warning{
+    color: $tb-figma-status-warning;
+            font-size: 25px;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-warning .w-icon-wrapper .k-icon.k-font-icon.w-icon.w-i-warning::before{
+    content: "\e09a";
+        
+}

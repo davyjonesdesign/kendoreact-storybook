@@ -21,3 +21,12 @@
             background-image: none;
         
 }
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-success .k-icon.k-font-icon.w-icon.w-i-success{
+    font-size: 25px;
+            color: $tb-figma-status-success;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-block-link-status.w-block-link-success .w-icon-wrapper .k-icon.k-font-icon.w-icon.w-i-success::before{
+    content: "\e098";
+        
+}

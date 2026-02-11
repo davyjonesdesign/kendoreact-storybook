@@ -1,0 +1,50 @@
+@use '../tokens' as *;
+  @use '../placeholders' as *;
+
+  @use '../kendo' as *;
+
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only{
+                    @extend %tb-effects-tb-internal-none-effects;
+          background-color: $tb-figma-neutral-light-2;
+            background-image: none;
+            border-bottom-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-top-style: none;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            padding-left: 15px;
+            column-gap: 5px;
+            padding-right: 15px;
+            cursor: default;
+            min-height: 60px;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only:hover{
+                    @extend %tb-effects-tb-internal-none-effects;
+      
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only .k-icon.k-font-icon.k-i-star{
+    color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only .w-icon-wrapper .k-icon.k-font-icon.k-i-star::before{
+    content: "\e017";
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only .k-card-subtitle{
+    color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only .k-icon.k-font-icon.w-i-calendarTime{
+    font-family: DesignIconsFont_1;
+            font-size: 30px;
+            color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-card.k-card-horizontal.w-block-link-horizontal.w-read-only:hover .k-icon.k-font-icon.w-icon.w-i-calendarTime{
+    color: $tb-figma-neutral-dark-2;
+        
+}
